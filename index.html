@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Form Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="myForm">
+      <div class="form-control">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+        <span class="error-message"></span>
+      </div>
+      <div class="form-control">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error-message"></span>
+      </div>
+      <div class="form-control">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <span class="error-message"></span>
+        <button class="show-password" aria-label="Show Password">
+          <span>Show Password</span>
+        </button>
+      </div>
+      <div class="form-control">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        />
+        <span class="error-message"></span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

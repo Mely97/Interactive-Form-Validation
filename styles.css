@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 75px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  display: block;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control.error .error-message {
+  opacity: 1;
+}
+
+.form-control.error .success-icon {
+  display: none;
+}
+
+button.show-password {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+button.show-password:hover {
+  color: blue;
+}
